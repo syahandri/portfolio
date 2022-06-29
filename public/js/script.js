@@ -1,9 +1,9 @@
 // Toggle nav menu mobile
 const toggleNav = document.querySelector('#navbar #toggle-nav-menu')
 toggleNav.addEventListener('click', function () {
-    const navMenu = document.querySelector('#navbar #nav-menu')
-    this.classList.toggle('active')
-    navMenu.classList.toggle('show')
+   const navMenu = document.querySelector('#navbar #nav-menu')
+   this.classList.toggle('active')
+   navMenu.classList.toggle('show')
 })
 
 // Nav menu
@@ -12,81 +12,81 @@ const aboutLink = document.querySelector('#about-link')
 const skillLink = document.querySelector('#skill-link')
 const portfolioLink = document.querySelector('#portfolio-link')
 const contactLink = document.querySelector('#contact-link')
-homeLink.addEventListener('click', function(e) {
-    e.preventDefault()
-    const home = document.querySelector('#home')
-    this.classList.add('active')
-    aboutLink.classList.remove('active')
-    skillLink.classList.remove('active')
-    portfolioLink.classList.remove('active')
-    contactLink.classList.remove('active')
-    home.scrollIntoView()
+homeLink.addEventListener('click', function (e) {
+   e.preventDefault()
+   const home = document.querySelector('#home')
+   this.classList.add('active')
+   aboutLink.classList.remove('active')
+   skillLink.classList.remove('active')
+   portfolioLink.classList.remove('active')
+   contactLink.classList.remove('active')
+   home.scrollIntoView()
 })
 
-aboutLink.addEventListener('click', function(e) {
-    e.preventDefault()
-    const about = document.querySelector('#about')
-    this.classList.add('active')
-    homeLink.classList.remove('active')
-    skillLink.classList.remove('active')
-    portfolioLink.classList.remove('active')
-    contactLink.classList.remove('active')
-    about.scrollIntoView()
+aboutLink.addEventListener('click', function (e) {
+   e.preventDefault()
+   const about = document.querySelector('#about')
+   this.classList.add('active')
+   homeLink.classList.remove('active')
+   skillLink.classList.remove('active')
+   portfolioLink.classList.remove('active')
+   contactLink.classList.remove('active')
+   about.scrollIntoView()
 })
 
-skillLink.addEventListener('click', function(e) {
-    e.preventDefault()
-    const skill = document.querySelector('#skill')
-    this.classList.add('active')
-    homeLink.classList.remove('active')
-    aboutLink.classList.remove('active')
-    portfolioLink.classList.remove('active')
-    contactLink.classList.remove('active')
-    skill.scrollIntoView()
+skillLink.addEventListener('click', function (e) {
+   e.preventDefault()
+   const skill = document.querySelector('#skill')
+   this.classList.add('active')
+   homeLink.classList.remove('active')
+   aboutLink.classList.remove('active')
+   portfolioLink.classList.remove('active')
+   contactLink.classList.remove('active')
+   skill.scrollIntoView()
 })
 
-portfolioLink.addEventListener('click', function(e) {
-    e.preventDefault()
-    const portfolio = document.querySelector('#portfolio')
-    this.classList.add('active')
-    homeLink.classList.remove('active')
-    aboutLink.classList.remove('active')
-    skillLink.classList.remove('active')
-    contactLink.classList.remove('active')
-    portfolio.scrollIntoView()
+portfolioLink.addEventListener('click', function (e) {
+   e.preventDefault()
+   const portfolio = document.querySelector('#portfolio')
+   this.classList.add('active')
+   homeLink.classList.remove('active')
+   aboutLink.classList.remove('active')
+   skillLink.classList.remove('active')
+   contactLink.classList.remove('active')
+   portfolio.scrollIntoView()
 })
 
-contactLink.addEventListener('click', function(e) {
-    e.preventDefault()
-    const contact = document.querySelector('#contact')
-    this.classList.add('active')
-    homeLink.classList.remove('active')
-    aboutLink.classList.remove('active')
-    skillLink.classList.remove('active')
-    portfolioLink.classList.remove('active')
-    contact.scrollIntoView()
+contactLink.addEventListener('click', function (e) {
+   e.preventDefault()
+   const contact = document.querySelector('#contact')
+   this.classList.add('active')
+   homeLink.classList.remove('active')
+   aboutLink.classList.remove('active')
+   skillLink.classList.remove('active')
+   portfolioLink.classList.remove('active')
+   contact.scrollIntoView()
 })
 
 // Back to top
 const backTop = document.querySelector('#back-to-top')
 window.onscroll = () => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backTop.classList.add('flex')
-        backTop.classList.remove('hidden')
-    } else {
-        backTop.classList.remove('flex')
-        backTop.classList.add('hidden')
-    }
+   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      backTop.classList.add('flex')
+      backTop.classList.remove('hidden')
+   } else {
+      backTop.classList.remove('flex')
+      backTop.classList.add('hidden')
+   }
 }
 
 backTop.addEventListener('click', () => {
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop = 0
-    homeLink.classList.add('active')
-    aboutLink.classList.remove('active')
-    skillLink.classList.remove('active')
-    portfolioLink.classList.remove('active')
-    contactLink.classList.remove('active')
+   document.body.scrollTop = 0
+   document.documentElement.scrollTop = 0
+   homeLink.classList.add('active')
+   aboutLink.classList.remove('active')
+   skillLink.classList.remove('active')
+   portfolioLink.classList.remove('active')
+   contactLink.classList.remove('active')
 })
 
 // Dark mode toggle
@@ -96,21 +96,43 @@ const moon = '<svg class="h-6 w-6" class="fill-current" fill="currentColor" view
 const darkToggle = document.querySelector('#darkMode-toggle')
 const html = document.querySelector('html')
 darkToggle.addEventListener('click', function () {
-    html.classList.toggle('dark')
+   html.classList.toggle('dark')
 
-    if (html.classList.contains('dark')) {
-        localStorage.theme = 'dark'
-        this.innerHTML = sun
-    } else {
-        localStorage.theme = 'light'
-        this.innerHTML = moon
-    }
+   if (html.classList.contains('dark')) {
+      localStorage.theme = 'dark'
+      this.innerHTML = sun
+   } else {
+      localStorage.theme = 'light'
+      this.innerHTML = moon
+   }
 })
 
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    html.classList.add('dark')
-    darkToggle.innerHTML = sun
+   html.classList.add('dark')
+   darkToggle.innerHTML = sun
 } else {
-    html.classList.remove('dark')
-    darkToggle.innerHTML = moon
+   html.classList.remove('dark')
+   darkToggle.innerHTML = moon
 }
+// preloading
+window.addEventListener('load', () => {
+   const loading = document.querySelector('.loading')
+   const hiddenEl = document.querySelectorAll('.hidden')
+   setTimeout(() => {
+      hiddenEl.forEach(el => el.classList.remove('hidden'))
+      backTop.classList.add('hidden')
+      loading.classList.add('hidden')
+
+      const option = {interval: 200}
+      ScrollReveal().reveal('#home')
+      ScrollReveal().reveal('.hero', option)
+      ScrollReveal().reveal('#about')
+      ScrollReveal().reveal('.about', option)
+      ScrollReveal().reveal('#skill')
+      ScrollReveal().reveal('.skill', option)
+      ScrollReveal().reveal('#portfolio')
+      ScrollReveal().reveal('.portfolio', option)
+      ScrollReveal().reveal('#contact')
+      ScrollReveal().reveal('.contact', option)
+   }, 2000)
+})

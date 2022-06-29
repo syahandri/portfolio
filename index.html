@@ -12,11 +12,16 @@
 
 		<link rel="stylesheet" href="public/css/style.min.css" />
 
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script>
+			ScrollReveal({ reset: true });
+		</script>
+
 		<title>My Portfolio</title>
 	</head>
 	<body>
 		<!-- Navbar -->
-		<header class="sticky top-0 right-0 z-50 w-full bg-slate-50 py-3 shadow-md dark:bg-slate-800" id="navbar">
+		<header class="hidden sticky top-0 right-0 z-50 w-full bg-slate-50 py-3 shadow-md dark:bg-slate-800" id="navbar">
 			<div class="container">
 				<div class="relative flex items-center justify-between">
 					<!-- brand -->
@@ -52,19 +57,19 @@
 		<!-- End navbar -->
 
 		<!-- Hero -->
-		<section id="home" class="bg-slate-200 dark:bg-slate-700">
+		<section id="home" class="hidden bg-slate-200 dark:bg-slate-700">
 			<div class="container">
 				<div class="flex flex-wrap justify-center py-16 md:justify-between">
 					<div class="basis-full p-8 md:basis-2/3">
-						<p class="mb-2 text-base font-medium text-slate-700 dark:text-slate-100">Hi, 👋</p>
-						<h1 class="text-5xl font-bold text-slate-700 dark:text-slate-100">Saya <span class="text-red-500">Ahmad Andrian Syah</span></h1>
-						<h2 class="text-xl font-semibold text-slate-500 dark:text-slate-400">Programmer, Web Developer</h2>
-						<p class="mb-6 text-base font-medium text-slate-500 dark:text-slate-400">Laravel, Codeigniter, Bootstrap, Tailwind, Javascript</p>
-						<a href="public/cv/CV - Ahmad Andrian Syah.pdf" target="_blank" class="inline-block rounded-full bg-red-500 py-2 px-6 text-base text-slate-200 shadow hover:bg-red-600">Download CV</a>
+						<p class="mb-2 text-base font-medium text-slate-700 dark:text-slate-100 hero">Hi,</p>
+						<h1 class="text-5xl font-bold text-slate-700 dark:text-slate-100 hero">Saya <span class="text-red-500">Ahmad Andrian Syah</span></h1>
+						<h2 class="text-xl font-semibold text-slate-500 dark:text-slate-400 hero">Programmer, Web Developer</h2>
+						<p class="mb-6 text-base font-medium text-slate-500 dark:text-slate-400 hero">Laravel, Codeigniter, Bootstrap, Tailwind, Javascript</p>
+						<a href="public/cv/CV - Ahmad Andrian Syah.pdf" target="_blank" class="inline-block rounded-full bg-red-500 py-2 px-6 text-base text-slate-200 shadow hover:bg-red-600 hero">Download CV</a>
 					</div>
 					<div class="hidden p-8 md:block md:basis-1/3">
 						<div class="flex justify-end">
-							<div class="w-fit overflow-hidden rounded-full bg-slate-100 dark:bg-slate-600">
+							<div class="w-fit overflow-hidden rounded-full bg-slate-100 dark:bg-slate-600 hero">
 								<img src="public/img/profile.png" alt="profile image" class="block w-60" />
 							</div>
 						</div>
@@ -75,26 +80,26 @@
 		<!-- End hero -->
 
 		<!-- About -->
-		<section id="about" class="dark:bg-slate-800">
+		<section id="about" class="hidden dark:bg-slate-800">
 			<div class="container">
 				<div class="flex flex-wrap justify-center py-16 md:justify-between">
 					<div class="basis-full px-8">
-						<h1 class="mb-1 text-4xl font-bold text-slate-700 dark:text-slate-200">Tentang Saya</h1>
+						<h1 class="mb-1 text-4xl font-bold text-slate-700 dark:text-slate-200 about">Tentang Saya</h1>
 					</div>
 					<div class="mb-3 basis-full px-8 md:basis-1/2">
-						<h2 class="mb-1 text-2xl font-semibold text-red-500">Ringkasan</h2>
-						<p class="text-justify text-base font-medium text-slate-500 dark:text-slate-400">Saya lulusan informatika Universitas Amikom Purwokerto, terbiasa menggunakan bahasa pemrograman PHP, Javascript, CSS, HTML serta program Microsoft Office dan mempunyai sertikat pelatihan Dekstop Office Training. Saya memiliki minat besar di dunia teknologi komputer khususnya programming.</p>
+						<h2 class="mb-1 text-2xl font-semibold text-red-500 about">Ringkasan</h2>
+						<p class="text-justify text-base font-medium text-slate-500 dark:text-slate-400 about">Saya lulusan informatika Universitas Amikom Purwokerto, terbiasa menggunakan bahasa pemrograman PHP, Javascript, CSS, HTML serta program Microsoft Office dan mempunyai sertikat pelatihan Dekstop Office Training. Saya memiliki minat besar di dunia teknologi komputer khususnya programming.</p>
 					</div>
 					<div class="mb-3 basis-full px-8 md:basis-1/2">
-						<h2 class="mb-1 text-2xl font-semibold text-red-500">Pendidikan</h2>
+						<h2 class="mb-1 text-2xl font-semibold text-red-500 about">Pendidikan</h2>
 						<ul class="list-inside list-disc">
-							<li class="mb-2 text-base text-slate-500 dark:text-slate-400">
-								<span class="inline-block font-bold">Universitam Amikom Purwokerto</span>
-								<span class="ml-[22px] inline-block text-justify">Mengambil jurusan Informatika, lulus dengan gelar Sarjana S1 Komputer dan memperoleh IPK 3.57 dari tahun 2017 - 2021</span>
+							<li class="mb-2 text-base text-slate-500 dark:text-slate-400 about">
+								<span class="inline-block font-bold about">Universitam Amikom Purwokerto</span>
+								<span class="ml-[22px] inline-block text-justify about">Mengambil jurusan Informatika, lulus dengan gelar Sarjana S1 Komputer dan memperoleh IPK 3.57 dari tahun 2017 - 2021</span>
 							</li>
-							<li class="mb-2 text-base text-slate-500 dark:text-slate-400">
-								<span class="inline-block font-bold">LP3I BC Tegal</span>
-								<span class="ml-[22px] inline-block text-justify">Mengambil jurusan Informatika Komputer pada tahun 2015 dan lulus dengan baik pada tahun 2017</span>
+							<li class="mb-2 text-base text-slate-500 dark:text-slate-400 about">
+								<span class="inline-block font-bold about">LP3I BC Tegal</span>
+								<span class="ml-[22px] inline-block text-justify about">Mengambil jurusan Informatika Komputer pada tahun 2015 dan lulus dengan baik pada tahun 2017</span>
 							</li>
 						</ul>
 					</div>
@@ -104,74 +109,74 @@
 		<!-- End about -->
 
 		<!-- Skill -->
-		<section id="skill" class="bg-slate-200 dark:bg-slate-700">
+		<section id="skill" class="hidden bg-slate-200 dark:bg-slate-700">
 			<div class="container">
 				<div class="flex flex-wrap justify-center py-16 md:justify-between">
 					<div class="basis-full px-8">
-						<h1 class="mb-1 text-4xl font-bold text-slate-700 dark:text-slate-100">Skill</h1>
+						<h1 class="mb-1 text-4xl font-bold text-slate-700 dark:text-slate-100 skill">Skill</h1>
 					</div>
 					<div class="mb-3 basis-full px-8 sm:basis-1/2">
-						<h2 class="mb-1 text-2xl font-semibold text-red-500">Kemampuan</h2>
+						<h2 class="mb-1 text-2xl font-semibold text-red-500 skill">Kemampuan</h2>
 						<ul class="list-none">
-							<li class="mb-1 text-base text-slate-500 dark:text-slate-400">
-								<span class="inline-block">Mampu mengatasi masalah</span>
+							<li class="mb-1 text-base text-slate-500 dark:text-slate-400 skill">
+								<span class="inline-block skill">Mampu mengatasi masalah</span>
 							</li>
-							<li class="mb-1 text-base text-slate-500 dark:text-slate-400">
-								<span class="inline-block">Mudah beradapatsi di lingkungan baru</span>
+							<li class="mb-1 text-base text-slate-500 dark:text-slate-400 skill">
+								<span class="inline-block skill">Mudah beradapatsi di lingkungan baru</span>
 							</li>
-							<li class="mb-1 text-base text-slate-500 dark:text-slate-400">
-								<span class="inline-block">Dapat bekerja dalam tim maupun mandiri</span>
+							<li class="mb-1 text-base text-slate-500 dark:text-slate-400 skill">
+								<span class="inline-block skill">Dapat bekerja dalam tim maupun mandiri</span>
 							</li>
-							<li class="mb-1 text-base text-slate-500 dark:text-slate-400">
-								<span class="inline-block">Komunikasi yang baik</span>
+							<li class="mb-1 text-base text-slate-500 dark:text-slate-400 skill">
+								<span class="inline-block skill">Komunikasi yang baik</span>
 							</li>
 						</ul>
 					</div>
 					<div class="mb-3 basis-full px-8 sm:basis-1/2">
-						<h2 class="mb-1 text-2xl font-semibold text-red-500">Software</h2>
+						<h2 class="mb-1 text-2xl font-semibold text-red-500 skill">Software</h2>
 						<div class="flex flex-wrap items-center">
 							<div class="basis-full pr-2 pb-2 md:basis-1/2 lg:basis-1/4">
-								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600">
+								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600 skill">
 									<p class="text-base font-semibold text-slate-600 dark:text-slate-200">Laravel</p>
 								</div>
 							</div>
 							<div class="basis-full pr-2 pb-2 md:basis-1/2 lg:basis-1/4">
-								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600">
+								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600 skill">
 									<p class="text-base font-semibold text-slate-600 dark:text-slate-200">Codeigniter</p>
 								</div>
 							</div>
 							<div class="basis-full pr-2 pb-2 md:basis-1/2 lg:basis-1/4">
-								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600">
+								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600 skill">
 									<p class="text-base font-semibold text-slate-600 dark:text-slate-200">Javascript</p>
 								</div>
 							</div>
 							<div class="basis-full pr-2 pb-2 md:basis-1/2 lg:basis-1/4">
-								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600">
+								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600 skill">
 									<p class="text-base font-semibold text-slate-600 dark:text-slate-200">HTML</p>
 								</div>
 							</div>
 							<div class="basis-full pr-2 pb-2 md:basis-1/2 lg:basis-1/4">
-								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600">
+								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600 skill">
 									<p class="text-base font-semibold text-slate-600 dark:text-slate-200">Tailwind</p>
 								</div>
 							</div>
 							<div class="basis-full pr-2 pb-2 md:basis-1/2 lg:basis-1/4">
-								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600">
+								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600 skill">
 									<p class="text-base font-semibold text-slate-600 dark:text-slate-200">Bootstrap</p>
 								</div>
 							</div>
 							<div class="basis-full pr-2 pb-2 md:basis-1/2 lg:basis-1/4">
-								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600">
+								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600 skill">
 									<p class="text-base font-semibold text-slate-600 dark:text-slate-200">MY SQL</p>
 								</div>
 							</div>
 							<div class="basis-full pr-2 pb-2 md:basis-1/2 lg:basis-1/4">
-								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600">
+								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600 skill">
 									<p class="text-base font-semibold text-slate-600 dark:text-slate-200">SQL Server</p>
 								</div>
 							</div>
 							<div class="basis-full pr-2 pb-2 md:basis-1/2 lg:basis-1/4">
-								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600">
+								<div class="rounded bg-slate-100 p-1 px-2 shadow dark:bg-slate-600 skill">
 									<p class="text-base font-semibold text-slate-600 dark:text-slate-200">Ms. Office</p>
 								</div>
 							</div>
@@ -183,60 +188,60 @@
 		<!-- End skill -->
 
 		<!-- Portfolio -->
-		<section id="portfolio" class="dark:bg-slate-800">
+		<section id="portfolio" class="hidden dark:bg-slate-800">
 			<div class="container">
 				<div class="flex flex-wrap justify-center py-16">
 					<div class="basis-full text-center">
-						<h1 class="mb-5 text-4xl font-bold text-slate-700 dark:text-slate-200">Portfolio</h1>
+						<h1 class="mb-5 text-4xl font-bold text-slate-700 dark:text-slate-200 portfolio">Portfolio</h1>
 					</div>
 					<div class="basis-full p-4 md:basis-1/2 lg:basis-1/3">
-						<a href="https://github.com/syahandri/toko-online-ci4" target="_blank">
-							<div class="group rounded-md bg-slate-100 shadow-lg dark:bg-slate-700">
+						<a href="https://github.com/syahandri/toko-online-ci4 portfolio" target="_blank">
+							<div class="group rounded-md bg-slate-100 shadow-lg dark:bg-slate-700 portfolio">
 								<div class="w-full overflow-hidden rounded-t-lg">
-									<img src="public/img/onlineshop.png" alt="Project Online Shop" class="block h-[200px] w-full object-cover object-center" />
+									<img src="public/img/onlineshop.png" alt="Project Online Shop Codeigniter" class="block h-[200px] w-full object-cover object-center" />
 								</div>
 								<div class="w-full p-4">
-									<p class="block text-center text-lg font-semibold text-sky-600 group-hover:text-red-500 dark:text-sky-600 dark:group-hover:text-red-500">Online Shop / E-Commerce</p>
-									<p class="text-base font-medium text-slate-600 dark:text-slate-400">Website toko online / e-commerce menggunakan Framework Codeigniter 4 dan MySQL.</p>
+									<p class="block text-center text-lg font-semibold text-sky-600 group-hover:text-red-500 dark:text-sky-600 dark:group-hover:text-red-500 portfolio">Online Shop / E-Commerce</p>
+									<p class="text-base font-medium text-slate-600 dark:text-slate-400 portfolio">Website toko online / e-commerce menggunakan Framework Codeigniter 4 dan MySQL.</p>
 								</div>
 							</div>
 						</a>
 					</div>
 					<div class="basis-full p-4 md:basis-1/2 lg:basis-1/3">
-						<a href="https://github.com/syahandri/dss_penilaiankaryawan" target="_blank">
-							<div class="group rounded-md bg-slate-100 shadow-lg dark:bg-slate-700">
+						<a href="https://github.com/syahandri/dss_penilaiankaryawan portfolio" target="_blank">
+							<div class="group rounded-md bg-slate-100 shadow-lg dark:bg-slate-700 portfolio">
 								<div class="w-full overflow-hidden rounded-t-lg">
 									<img src="public/img/dss.png" alt="Project Decision Support System" class="block h-[200px] w-full object-cover object-center" />
 								</div>
 								<div class="w-full p-4">
-									<p class="block text-center text-lg font-semibold text-sky-600 group-hover:text-red-500 dark:text-sky-600 dark:group-hover:text-red-500">Sistem Pendukung Keputusan</p>
-									<p class="text-base font-medium text-slate-600 dark:text-slate-400">Aplikasi sistem pendukung keputusan untuk menilai kinerja karyawan menggunakan Framework Codeigniter 3 dan MySQL.</p>
+									<p class="block text-center text-lg font-semibold text-sky-600 group-hover:text-red-500 dark:text-sky-600 dark:group-hover:text-red-500 portfolio">Sistem Pendukung Keputusan</p>
+									<p class="text-base font-medium text-slate-600 dark:text-slate-400 portfolio">Aplikasi sistem pendukung keputusan untuk menilai kinerja karyawan menggunakan Framework Codeigniter 3 dan MySQL.</p>
 								</div>
 							</div>
 						</a>
 					</div>
 					<div class="basis-full p-4 md:basis-1/2 lg:basis-1/3">
-						<a href="https://github.com/syahandri/sistem-pakar" target="_blank">
-							<div class="group rounded-md bg-slate-100 shadow-lg dark:bg-slate-700">
+						<a href="https://github.com/syahandri/sistem-pakar portfolio" target="_blank">
+							<div class="group rounded-md bg-slate-100 shadow-lg dark:bg-slate-700 portfolio">
 								<div class="w-full overflow-hidden rounded-t-lg">
 									<img src="public/img/sistempakar.png" alt="Project Expert System" class="block h-[200px] w-full object-cover object-center" />
 								</div>
 								<div class="w-full p-4">
-									<p class="block text-center text-lg font-semibold text-sky-600 group-hover:text-red-500 dark:text-sky-600 dark:group-hover:text-red-500">Sistem Pakar</p>
-									<p class="text-base font-medium text-slate-600 dark:text-slate-400">Aplikasi sistem pakar untuk mendiagnosis penyakit tanaman bawang merah menggunakan Framework Codeigniter 3 dan MySQL.</p>
+									<p class="block text-center text-lg font-semibold text-sky-600 group-hover:text-red-500 dark:text-sky-600 dark:group-hover:text-red-500 portfolio">Sistem Pakar</p>
+									<p class="text-base font-medium text-slate-600 dark:text-slate-400 portfolio">Aplikasi sistem pakar untuk mendiagnosis penyakit tanaman bawang merah menggunakan Framework Codeigniter 3 dan MySQL.</p>
 								</div>
 							</div>
 						</a>
 					</div>
-               <div class="basis-full p-4 md:basis-1/2 lg:basis-1/3">
-						<a href="https://github.com/syahandri/laravel_store" target="_blank">
-							<div class="group rounded-md bg-slate-100 shadow-lg dark:bg-slate-700">
+					<div class="basis-full p-4 md:basis-1/2 lg:basis-1/3">
+						<a href="https://github.com/syahandri/laravel_store portfolio" target="_blank">
+							<div class="group rounded-md bg-slate-100 shadow-lg dark:bg-slate-700 portfolio">
 								<div class="w-full overflow-hidden rounded-t-lg">
-									<img src="public/img/onlineshop_laravel.png" alt="Project Online Shop" class="block h-[200px] w-full object-cover object-center" />
+									<img src="public/img/onlineshop_laravel.png" alt="Project Online Shop Laravel" class="block h-[200px] w-full object-cover object-center" />
 								</div>
 								<div class="w-full p-4">
-									<p class="block text-center text-lg font-semibold text-sky-600 group-hover:text-red-500 dark:text-sky-600 dark:group-hover:text-red-500">Online Shop / E-Commerce (Versi Laravel)</p>
-									<p class="text-base font-medium text-slate-600 dark:text-slate-400">Website toko online / e-commerce menggunakan Framework Laravel dan MySQL.</p>
+									<p class="block text-center text-lg font-semibold text-sky-600 group-hover:text-red-500 dark:text-sky-600 dark:group-hover:text-red-500 portfolio">Online Shop / E-Commerce (Versi Laravel)</p>
+									<p class="text-base font-medium text-slate-600 dark:text-slate-400 portfolio">Website toko online / e-commerce menggunakan Framework Laravel dan MySQL.</p>
 								</div>
 							</div>
 						</a>
@@ -247,15 +252,15 @@
 		<!-- End portfolio -->
 
 		<!-- Contact -->
-		<section id="contact" class="bg-slate-200 dark:bg-slate-700">
+		<section id="contact" class="hidden bg-slate-200 dark:bg-slate-700">
 			<div class="container">
 				<div class="flex flex-wrap items-center justify-center py-16">
 					<div class="basis-full text-center">
-						<h1 class="mb-5 text-4xl font-bold text-slate-700 dark:text-slate-100">Kontak Saya</h1>
+						<h1 class="mb-5 text-4xl font-bold text-slate-700 dark:text-slate-100 contact">Kontak Saya</h1>
 					</div>
 					<div class="flex flex-wrap items-center justify-center">
 						<!-- email -->
-						<a href="mailto:syah.ahmadandrian@gmail.com" target="_blank" class="mx-2 flex h-10 w-10 items-center justify-center rounded-full border border-slate-500 p-2 text-slate-500 hover:border-red-600 hover:bg-red-600 hover:text-slate-100 dark:border-slate-400 dark:text-slate-400 dark:hover:border-red-600 dark:hover:text-slate-200">
+						<a href="mailto:syah.ahmadandrian@gmail.com" target="_blank" class="contact mx-2 flex h-10 w-10 items-center justify-center rounded-full border border-slate-500 p-2 text-slate-500 hover:border-red-600 hover:bg-red-600 hover:text-slate-100 dark:border-slate-400 dark:text-slate-400 dark:hover:border-red-600 dark:hover:text-slate-200">
 							<svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 								<title>Email</title>
 								<path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
@@ -263,7 +268,7 @@
 						</a>
 
 						<!-- whatsapp -->
-						<a href="https://wa.me/6287869984752" target="_blank" class="mx-2 flex h-10 w-10 items-center justify-center rounded-full border border-slate-500 p-2 text-slate-500 hover:border-green-600 hover:bg-green-600 hover:text-slate-100 dark:border-slate-400 dark:text-slate-400 dark:hover:border-green-600 dark:hover:text-slate-200">
+						<a href="https://wa.me/6287869984752" target="_blank" class="contact mx-2 flex h-10 w-10 items-center justify-center rounded-full border border-slate-500 p-2 text-slate-500 hover:border-green-600 hover:bg-green-600 hover:text-slate-100 dark:border-slate-400 dark:text-slate-400 dark:hover:border-green-600 dark:hover:text-slate-200">
 							<svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 								<title>WhatsApp</title>
 								<path
@@ -273,7 +278,7 @@
 						</a>
 
 						<!-- message -->
-						<a href="sms:+6287869984752" target="_blank" class="mx-2 flex h-10 w-10 items-center justify-center rounded-full border border-slate-500 p-2 text-slate-500 hover:border-blue-600 hover:bg-blue-600 hover:text-slate-100 dark:border-slate-400 dark:text-slate-400 dark:hover:border-blue-600 dark:hover:text-slate-200">
+						<a href="sms:+6287869984752" target="_blank" class="contact mx-2 flex h-10 w-10 items-center justify-center rounded-full border border-slate-500 p-2 text-slate-500 hover:border-blue-600 hover:bg-blue-600 hover:text-slate-100 dark:border-slate-400 dark:text-slate-400 dark:hover:border-blue-600 dark:hover:text-slate-200">
 							<svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 								<title>Message</title>
 								<path
@@ -283,7 +288,7 @@
 						</a>
 
 						<!-- phone -->
-						<a href="tel:+6287869984752" target="_blank" class="mx-2 flex h-10 w-10 items-center justify-center rounded-full border border-slate-500 p-2 text-slate-500 hover:border-amber-600 hover:bg-amber-600 hover:text-slate-100 dark:border-slate-400 dark:text-slate-400 dark:hover:border-amber-600 dark:hover:text-slate-200">
+						<a href="tel:+6287869984752" target="_blank" class="contact mx-2 flex h-10 w-10 items-center justify-center rounded-full border border-slate-500 p-2 text-slate-500 hover:border-amber-600 hover:bg-amber-600 hover:text-slate-100 dark:border-slate-400 dark:text-slate-400 dark:hover:border-amber-600 dark:hover:text-slate-200">
 							<svg class="h-6 w-6" class="fill-current" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 								<title>Phone</title>
 								<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
@@ -296,7 +301,7 @@
 		<!-- End contact -->
 
 		<!-- Footer -->
-		<footer class="bg-slate-800">
+		<footer class="hidden bg-slate-800">
 			<div class="container">
 				<div class="flex flex-wrap items-center justify-center">
 					<div class="basis-full py-2 text-center">
@@ -307,7 +312,7 @@
 		</footer>
 		<!-- End footer -->
 
-		<!-- Back to top -->
+		<!-- Dark mode toggle -->
 		<button type="button" class="fixed bottom-5 left-5 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-slate-100 hover:bg-black dark:bg-slate-200 dark:text-slate-800 dark:hover:bg-slate-300" id="darkMode-toggle">
 			<svg class="h-6 w-6" class="fill-current" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
 		</button>
@@ -317,6 +322,12 @@
 			<span class="mt-3 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
 		</button>
 
-		<script src="public/js/script.js"></script>
+      <div class="absolute w-full h-full z-[99999] bg-slate-900 top-0 start-0 loading">
+         <div class="flex justify-center items-center">
+            <img src="public/img/loading.svg" alt="loading">
+         </div>
+      </div>
+
+      <script src="public/js/script.js"></script>
 	</body>
 </html>
