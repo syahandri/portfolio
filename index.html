@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<link rel="stylesheet" href="assets/css/build.css" />
+		<script src="assets/js/script.js"></script>
+	</head>
+	<body class="bg-slate-200">
+		<!-- Navbar -->
+		<nav class="z-10 w-full shadow sticky top-0 bg-white">
+			<div class="container px-12">
+				<div class="flex items-center justify-between py-3">
+					<!-- brand -->
+					<div class="block">
+						<a href="" class="text-2xl font-bold text-slate-800">Portfolio</a>
+					</div>
+
+					<!-- tombol toggle menu saat di breakpoint small -->
+					<button class="text-dark text-2xl font-semibold md:hidden" id="btn-nav-menu">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+
+					<!-- menu saat breakpoint medium atau di atasnya -->
+					<div class="text-dark hidden text-sm font-semibold md:block">
+						<ul class="flex items-center">
+							<li class="group ms-4">
+								<a href="#beranda" class="text-slate-800 group-hover:text-orange-600 nav-link active">Beranda</a>
+							</li>
+							<li class="group ms-4">
+								<a href="#tentang-saya" class="text-slate-800 group-hover:text-orange-600 nav-link">Tentang Saya</a>
+							</li>
+							<li class="group ms-4">
+								<a href="#keahlian" class="text-slate-800 group-hover:text-orange-600 nav-link">Keahlian</a>
+							</li>
+							<li class="group ms-4">
+								<a href="#proyek" class="text-slate-800 group-hover:text-orange-600 nav-link">Proyek</a>
+							</li>
+							<li class="group ms-4">
+								<a href="#kontak" class="text-slate-800 group-hover:text-orange-600 nav-link">Kontak</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- menu saat breakpoint small -->
+					<div class="absolute bottom-0 top-0 right-0 z-20 w-1/2 bg-white h-dvh md:hidden overflow-hidden" id="small-nav-menu">
+						<div class="px-4 py-3 text-end">
+							<button id="btn-close" class="text-dark text-2xl font-semibold">
+								<i class="fa-solid fa-xmark"></i>
+							</button>
+						</div>
+
+						<ul class="block">
+							<li class="group mb-2 px-3">
+								<a href="#beranda" class="text-slate-800 group-hover:text-orange-600">Beranda</a>
+							</li>
+							<li class="group mb-2 px-3">
+								<a href="#tentang-saya" class="text-slate-800 group-hover:text-orange-600">Tentang Saya</a>
+							</li>
+							<li class="group mb-2 px-3">
+								<a href="#keahlian" class="text-slate-800 group-hover:text-orange-600">Keahlian</a>
+							</li>
+							<li class="group mb-2 px-3">
+								<a href="#proyek" class="text-slate-800 group-hover:text-orange-600">Proyek</a>
+							</li>
+							<li class="group mb-2 px-3">
+								<a href="#kontak" class="text-slate-800 group-hover:text-orange-600">Kontak</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Navbar -->
+
+		<!-- Beranda -->
+		<section id="beranda" class="bg-slate-100 py-10">
+			<div class="container px-12 mt-10">
+				<div class="flex items-center justify-between flex-wrap-reverse">
+					<div class="w-full lg:w-1/2">
+						<p class="text-base text-slate-800 font-semibold mb-1 md:text-center lg:text-left">Hai,</p>
+						<h1 class="font-bold text-xl md:text-4xl mb-2 md:text-center lg:text-left"><span class="text-slate-800">Saya</span> <span class="text-orange-600">Ahmad Andrian Syah</span></h1>
+						<p class="text-slate-600 font-semibold text-sm leading-5">Seorang web programmer yang berpengelaman dalam membangun, mengembangkan, dan merawat aplikasi website. Mempunyai keahlian menggunakan bahasa pemrograman PHP, Framework Laravel dan CodeIgniter, JavaScript, HTML5, CSS, Bootstrap, Tailwind, serta Database MySQL, PostgreSQL, dan SQL Server.</p>
+
+						<div class="text-center lg:text-left">
+							<a href="" class="text-xl font-normal text-slate-100 bg-orange-600 py-2 px-4 rounded-full mt-8 inline-block">Download CV</a>
+						</div>
+					</div>
+
+					<div class="w-full lg:w-1/2 flex justify-center lg:justify-end mb-10 lg:mb-0">
+						<div class="rounded-full w-80 h-80 overflow-hidden bg-slate-100 flex justify-end">
+							<img src="./assets/img/user.png" alt="Foto User" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1F5F9" fill-opacity="1" d="M0,32L80,48C160,64,320,96,480,90.7C640,85,800,43,960,53.3C1120,64,1280,128,1360,160L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+		<!-- Beranda -->
+
+		<!-- Tentang Saya -->
+		<section id="tentang-saya" class="bg-slate-200">
+			<div class="container px-12">
+				<h1 class="text-2xl md:text-4xl text-slate-800 font-bold mb-1 text-center lg:text-left">Tentang Saya</h1>
+				<div class="w-full border-b-2 border-b-slate-800 rounded-full mb-5"></div>
+				<div class="flex flex-wrap items-start justify-between">
+					<div class="w-full md:w-1/2">
+						<h2 class="text-xl md:text-2xl font-semibold text-orange-600 mb-1">Pengalaman Kerja</h2>
+						<div class="mb-7">
+							<p class="text-base font-semibold text-slate-700">Web Programmer di PT. Syncore Indonesia</p>
+							<p class="text-sm text-slate-500">Tahun 2022 - 2024</p>
+
+							<ul class="list-disc list-outside ms-6 mt-2 text-slate-700 text-sm">
+								<li>Membangun aplikasi website untuk internal perusahaan dan klien</li>
+								<li>Membangun integrasi API antara sistem aplikasi website internal perusahaan dengan aplikasi website klien</li>
+								<li>Mengembangkan website aplikasi dengan menambahkan modul-modul baru maupun memperbaiki modul-modul yang sudah ada</li>
+								<li>Memperbaiki bug-bug pada aplikasi website</li>
+							</ul>
+						</div>
+
+						<div class="mb-7">
+							<p class="text-base font-semibold text-slate-700">Programmer di CV. Kamar Cokelat</p>
+							<p class="text-sm text-slate-500">Tahun 2017</p>
+
+							<ul class="list-disc list-outside ms-6 mt-2 text-slate-700 text-sm">
+								<li>Membangun dan mengembangkan website internal untuk perusahaan</li>
+								<li>Membangun sistem dekstop untuk pencatatan transaksi internal perusahaan</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="w-full md:w-1/2">
+						<h2 class="text-xl md:text-2xl font-semibold text-orange-600 mb-1">Riwayat Pendidikan</h2>
+						<div class="mb-7">
+							<p class="text-base font-semibold text-slate-700">Universitas Amikom Purwokerto</p>
+							<p class="text-sm text-slate-500">Informatika</p>
+							<p class="text-sm text-slate-500">2017 - 2021, IPK : 3.57</p>
+						</div>
+
+						<div class="mb-7">
+							<p class="text-base font-semibold text-slate-700">LP3I BC Tegal</p>
+							<p class="text-sm text-slate-500">Informatika Komputer</p>
+							<p class="text-sm text-slate-500">2015 - 2017, IPK : 3.50</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f1f5f9" fill-opacity="1" d="M0,32L80,48C160,64,320,96,480,90.7C640,85,800,43,960,53.3C1120,64,1280,128,1360,160L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+		<!-- Tentang Saya -->
+
+		<!-- Keahlian -->
+		<section id="keahlian" class="bg-slate-100">
+			<div class="container px-12">
+				<h1 class="text-2xl md:text-4xl text-slate-800 font-bold mb-1 text-center lg:text-left">Keahlian</h1>
+				<div class="w-full border-b-2 border-b-slate-800 rounded-full mb-5"></div>
+				<div class="flex flex-wrap items-start justify-between">
+					<div class="w-full md:w-1/2">
+						<h2 class="text-xl md:text-2xl font-semibold text-orange-600 mb-1">Softskill</h2>
+						<div class="mb-7">
+							<ul class="list-disc list-outside ms-5 mt-2 text-slate-700 text-sm">
+								<li>Kemampun untuk mengatasi masalah dengan baik</li>
+								<li>Mudah untuk beradaptasi dalam lingkungan baru</li>
+								<li>Mampu bekerja dalam tim maupun secara individu</li>
+								<li>Kemampuan komunikasi verbal dan lisan yang baik</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="w-full md:w-1/2">
+						<h2 class="text-xl md:text-2xl font-semibold text-orange-600 mb-1">Hardskill</h2>
+						<div class="mb-7">
+							<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">PHP</div>
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">Laravel</div>
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">CodeIgniter</div>
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">JavaScript</div>
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">HTML5</div>
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">CSS</div>
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">Bootstrap</div>
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">Tailwind</div>
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">MySQL</div>
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">PostgreSQL</div>
+								<div class="bg-slate-200 py-1 px-5 rounded-md shadow text-slate-600 font-semibold text-base">SQL Server</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1F5F9" fill-opacity="1" d="M0,32L80,48C160,64,320,96,480,90.7C640,85,800,43,960,53.3C1120,64,1280,128,1360,160L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+		<!-- Keahlian -->
+
+		<!-- Proyek -->
+		<section id="proyek" class="bg-slate-200">
+			<div class="container px-12">
+				<h1 class="text-2xl md:text-4xl text-slate-800 font-bold mb-1 text-center">Proyek</h1>
+				<div class="w-full border-b-2 border-b-slate-800 rounded-full mb-5"></div>
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3">
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/onlineshop_laravel.png" alt="Proyek online shop laravel" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="https://github.com/syahandri/laravel_store" target="_blank" class="text-sky-700 font-bold text-xl hover:text-orange-600">Online Shop (Laravel)</a>
+							<p class="text-base text-slate-700">Website toko online / e-commerce menggunakan Framework Laravel dan Database MySQL.</p>
+						</div>
+					</div>
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3">
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/onlineshop.png" alt="Proyek online shop codeigniter" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="https://github.com/syahandri/toko-online-ci4" target="_blank" class="text-sky-700 font-bold text-xl hover:text-orange-600">Online Shop</a>
+							<p class="text-base text-slate-700">Website toko online / e-commerce menggunakan Framework Codeigniter dan Database MySQL.</p>
+						</div>
+					</div>
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3">
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/sistempakar.png" alt="Proyek sistem pakar" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="https://github.com/syahandri/sistem-pakar" target="_blank" class="text-sky-700 font-bold text-xl hover:text-orange-600">Sistem Pakar</a>
+							<p class="text-base text-slate-700">Aplikasi sistem pakar untuk mendiagnosis penyakit tanaman bawang merah menggunakan Framework Codeigniter dan Database MySQL.</p>
+						</div>
+					</div>
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3">
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/dss.png" alt="Proyek sistem pendukung keputusan" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="https://github.com/syahandri/dss_penilaiankaryawan" target="_blank" class="text-sky-700 font-bold text-xl hover:text-orange-600">Sistem Pendukung Keputusan</a>
+							<p class="text-base text-slate-700">Aplikasi sistem pendukung keputusan untuk menilai kinerja karyawan menggunakan Framework Codeigniter dan Database MySQL.</p>
+						</div>
+					</div>
+
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3 relative">
+                  <div class="absolute top-0 left-0 bg-orange-600 text-slate-100 py-1 px-2 shadow">Private Repo</div>
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/saab3.jpg" alt="Proyek SAAB3" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="javascript:void(0)" class="text-sky-700 font-bold text-xl hover:text-orange-600">Sistem Akuntansi dan Analisis Bisnis (SAAB3)</a>
+							<p class="text-base text-slate-700">Sistem aplikasi akuntansi dan analisis yang memudahkan dalam melakukan pencatatan keuangan untuk membantu memudahkan dalam melakukan pelaporan keuangan.</p>
+						</div>
+					</div>
+               
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3 relative">
+                  <div class="absolute top-0 left-0 bg-orange-600 text-slate-100 py-1 px-2 shadow">Private Repo</div>
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/rba.png" alt="Proyek RBA" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="javascript:void(0)" class="text-sky-700 font-bold text-xl hover:text-orange-600">Sistem Rencana Bisnis Anggaran (RBA)</a>
+							<p class="text-base text-slate-700">Sistem aplikasi yang digunakan untuk memudahkan dalam penentuan rencana bisnis anggaran</p>
+						</div>
+					</div>
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3 relative">
+                  <div class="absolute top-0 left-0 bg-orange-600 text-slate-100 py-1 px-2 shadow">Private Repo</div>
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/penatausahaan.png" alt="Proyek Penatausahaan" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="javascript:void(0)" class="text-sky-700 font-bold text-xl hover:text-orange-600">Sistem Penatausahaan</a>
+							<p class="text-base text-slate-700">Sistem Sistem aplikasi yang digunakan untuk memudahkan dalam melakukan pencatatan penatausahaan</p>
+						</div>
+					</div>
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3 relative">
+                  <div class="absolute top-0 left-0 bg-orange-600 text-slate-100 py-1 px-2 shadow">Private Repo</div>
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/pengajuan.png" alt="Proyek Pengajuan" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="javascript:void(0)" class="text-sky-700 font-bold text-xl hover:text-orange-600">Sistem Pengajuan</a>
+							<p class="text-base text-slate-700">Sistem aplikasi yang digunakan untuk memudahkan dalam pengajuan seperti pengadaan SDM, pengadaan sarana dan prasarana, kunjungan luar daerah, dan lain-lain.</p>
+						</div>
+					</div>
+
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3 relative">
+                  <div class="absolute top-0 left-0 bg-orange-600 text-slate-100 py-1 px-2 shadow">Private Repo</div>
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/digital-literacy.png" alt="Proyek Digital Literacy" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="javascript:void(0)" class="text-sky-700 font-bold text-xl hover:text-orange-600">Sistem Digital Literacy</a>
+							<p class="text-base text-slate-700">Sistem aplikasi yang digunakan untuk wadah bagi para trainer dalam memberikan materi kepada partisipan untuk meningkatkan kecapakan digital dalam pengembangan usaha.</p>
+						</div>
+					</div>
+
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3 relative">
+                  <div class="absolute top-0 left-0 bg-orange-600 text-slate-100 py-1 px-2 shadow">Private Repo</div>
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/ywsi.png" alt="Proyek YWSI" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="javascript:void(0)" class="text-sky-700 font-bold text-xl hover:text-orange-600">Website YWSI</a>
+							<p class="text-base text-slate-700">Webiste profile untuk yayasan wirausaha sosial indonesia</p>
+						</div>
+					</div>
+
+					<div class="rounded-md overflow-hidden bg-slate-100 shadow p-3 relative">
+                  <div class="absolute top-0 left-0 bg-orange-600 text-slate-100 py-1 px-2 shadow">Private Repo</div>
+						<div class="rounded overflow-hidden">
+							<img src="./assets/img/syncore-consulting.png" alt="Proyek Syncore Consulting" />
+						</div>
+
+						<div class="mt-2 text-center p-4">
+							<a href="javascript:void(0)" class="text-sky-700 font-bold text-xl hover:text-orange-600">Website Syncore Consulting</a>
+							<p class="text-base text-slate-700">Website profile unit consulting milik PT. Syncore Indonesia</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f1f5f9" fill-opacity="1" d="M0,32L80,48C160,64,320,96,480,90.7C640,85,800,43,960,53.3C1120,64,1280,128,1360,160L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+		<!-- Proyek -->
+
+		<!-- Kontak -->
+		<section id="kontak" class="bg-slate-100">
+			<div class="container px-12">
+				<h1 class="text-2xl md:text-4xl text-slate-800 font-bold mb-1 text-center">Kontak Saya</h1>
+				<div class="w-full border-b-2 border-b-slate-800 rounded-full mb-5"></div>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+					<div class="p-2 rounded-md group basis-full bg-slate-200 shadow-sm">
+						<a target="_blank" href="mailto:syah.ahmadandrian@gmail.com" class="group-hover:text-orange-600 flex items-center font-semibold text-base text-slate-700"><i class="me-2 fa-regular fa-envelope fa-2xl"></i> syah.ahmadandrian@gmail.com</a>
+					</div>
+					<div class="p-2 rounded-md group basis-full bg-slate-200 shadow-sm">
+						<a target="_blank" href="https://wa.me/6287869984752" class="group-hover:text-orange-600 flex items-center font-semibold text-base text-slate-700"><i class="me-2 fa-brands fa-whatsapp fa-2xl"></i> +628 786 998 4752</a>
+					</div>
+					<div class="p-2 rounded-md group basis-full bg-slate-200 shadow-sm">
+						<a target="_blank" href="tel:+6287869984752" class="group-hover:text-orange-600 flex items-center font-semibold text-base text-slate-700"><i class="me-2 fa-solid fa-phone fa-2xl"></i> +628 786 998 4752</a>
+					</div>
+					<div class="p-2 rounded-md group basis-full bg-slate-200 shadow-sm">
+						<a target="_blank" href="https://www.linkedin.com/in/ahmad-andrian-syah-1a2073248" class="group-hover:text-orange-600 flex items-center font-semibold text-base text-slate-700"><i class="me-2 fa-brands fa-linkedin fa-2x"></i> Ahmad Andrian Syah</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1F5F9" fill-opacity="1" d="M0,32L80,48C160,64,320,96,480,90.7C640,85,800,43,960,53.3C1120,64,1280,128,1360,160L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+		<!-- Kontak -->
+
+		<!-- Footer -->
+		<footer class="bg-slate-700">
+			<div class="container px-12 py-4">
+				<div class="text-center font-semibold text-sm text-slate-100">Made with ❤️ by Me</div>
+			</div>
+		</footer>
+		<!-- Footer -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	</body>
+</html>
