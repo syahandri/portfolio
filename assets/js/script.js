@@ -1,25 +1,18 @@
 "use strict"
 
 document.addEventListener('DOMContentLoaded', () => {
-   // Menampilkan menu hamburge navbar
-   const btnNavMenu = document.querySelector('#btn-nav-menu')
-   const btnCloseNavMenu = document.querySelector('#btn-close')
-   const smallNavMenu = document.querySelector('#small-nav-menu')
-   btnNavMenu.addEventListener('click', () => {
-      smallNavMenu.classList.add('active')
-   })
+  const formContact = document.querySelector('#formContact')
+  formContact.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const name = document.querySelector('#name')
+    const instance = document.querySelector('#instance')
+    const message = document.querySelector('#message')
 
-   btnCloseNavMenu.addEventListener('click', () => {
-      smallNavMenu.classList.remove('active')
-   })
+    const text = `Halo%2Csaya%20${name.value}%20dari%20${instance.value}%0A${message.value}`
+    const url = `https://wa.me/6287869984752?text=${text}`
 
-   // menambahkan class active ke nav link
-   const navLink = document.querySelectorAll('.nav-link')
-   navLink.forEach(nav => {
-      nav.addEventListener('click', e => {
-         const currentActive = document.querySelector('.active')
-         currentActive.className = currentActive.className.replace(' active', '')
-         nav.className += ' active'
-      })
-   })
+    window.open(url, '_blank')
+    
+    formContact.reset()
+  })
 })
