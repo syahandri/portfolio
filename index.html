@@ -25,7 +25,7 @@
       class="fixed bottom-[2.5%] left-[50%] z-50 flex w-full -translate-x-[50%] justify-center"
     >
       <div
-        class="flex w-[400px] items-center justify-evenly rounded-full bg-stone-200 py-2 shadow-lg"
+        class="flex w-[400px] items-center justify-evenly rounded-full border border-stone-300 bg-stone-200 py-2 shadow-lg"
       >
         <div
           class="group rounded-full p-2 duration-300 ease-in-out hover:bg-stone-50 focus:bg-stone-50 active:bg-stone-50"
@@ -33,7 +33,7 @@
           <a href="#home" class="font-google-sans-code flex items-center gap-1">
             <span class="material-symbols-rounded text-stone-800"> home </span>
             <span
-              class="w-0 overflow-hidden text-stone-700 duration-300 ease-in-out group-hover:w-full"
+              class="w-0 overflow-hidden text-stone-700 duration-300 ease-in-out group-hover:w-full group-hover:text-stone-100"
               >Home</span
             >
           </a>
@@ -50,7 +50,7 @@
               work_history
             </span>
             <span
-              class="w-0 overflow-hidden text-stone-700 duration-300 ease-in-out group-hover:w-full"
+              class="w-0 overflow-hidden text-stone-700 duration-300 ease-in-out group-hover:w-full group-hover:text-stone-100"
               >About</span
             >
           </a>
@@ -67,7 +67,7 @@
               stacks
             </span>
             <span
-              class="w-0 overflow-hidden text-stone-700 duration-300 ease-in-out group-hover:w-full"
+              class="w-0 overflow-hidden text-stone-700 duration-300 ease-in-out group-hover:w-full group-hover:text-stone-100"
               >Skills</span
             >
           </a>
@@ -84,7 +84,7 @@
               assignment
             </span>
             <span
-              class="w-0 overflow-hidden text-stone-700 duration-300 ease-in-out group-hover:w-full"
+              class="w-0 overflow-hidden text-stone-700 duration-300 ease-in-out group-hover:w-full group-hover:text-stone-100"
               >Projects</span
             >
           </a>
@@ -101,7 +101,7 @@
               contact_phone
             </span>
             <span
-              class="w-0 overflow-hidden text-stone-700 duration-300 ease-in-out group-hover:w-full"
+              class="w-0 overflow-hidden text-stone-700 duration-300 ease-in-out group-hover:w-full group-hover:text-stone-100"
               >Contact</span
             >
           </a>
@@ -111,13 +111,11 @@
     <!-- End Navbar -->
 
     <!-- Home -->
-    <section id="home" class="flex items-center justify-center mt-10">
+    <section id="home" class="flex items-center justify-center md:mt-10">
       <div class="container">
         <div class="bg-white p-8 md:rounded-2xl">
-          <div
-            class="grid grid-cols-1 justify-center gap-8 lg:grid-cols-3 lg:items-center lg:justify-between"
-          >
-            <div class="order-2 col-span-2 lg:order-1">
+          <div class="grid grid-cols-1 justify-center">
+            <div>
               <h3
                 class="font-inter text-center text-2xl font-semibold text-stone-800 md:mb-1 md:text-4xl lg:text-start"
               >
@@ -142,22 +140,10 @@
 
               <a
                 href=""
-                class="font-work-sans flex w-fit items-start justify-between rounded-sm bg-yellow-200 px-6 py-3 text-stone-800 hover:bg-yellow-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg active:bg-yellow-300 active:shadow-lg"
+                class="font-work-sans flex w-fit items-start justify-between rounded-lg bg-yellow-200 px-6 py-3 text-stone-800 hover:bg-yellow-300 hover:shadow-lg focus:bg-yellow-300 focus:shadow-lg active:bg-yellow-300 active:shadow-lg"
                 >CV Saya
                 <span class="material-symbols-rounded"> arrow_forward </span></a
               >
-            </div>
-
-            <div class="order-1 flex justify-center lg:order-2 lg:block">
-              <div
-                class="w-2/3 overflow-hidden rounded-full bg-yellow-200 shadow-xl md:w-1/2 lg:w-[85%]"
-              >
-                <img
-                  src="./assets/img/profile/user.png"
-                  alt="foto andrian syah"
-                  class="w-full object-cover"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -272,8 +258,8 @@
     <!-- End About -->
 
     <!-- Skills -->
-    <section id="skills" class="relative z-10 flex items-center justify-center">
-      <div class="container mt-10">
+    <section id="skills" class="mt-10 flex items-center justify-center">
+      <div class="container">
         <div class="bg-white p-8 md:rounded-2xl">
           <div
             class="grid grid-cols-1 gap-4 md:grid-cols-2 md:justify-between md:gap-8"
@@ -331,7 +317,7 @@
               <div class="flex flex-wrap items-center">
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#E34F26]"
+                    class="hover:fill-[#E34F26] focus:fill-[#E34F26] active:fill-[#E34F26]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -345,7 +331,7 @@
 
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#663399]"
+                    class="hover:fill-[#663399] focus:fill-[#663399] active:fill-[#663399]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -359,7 +345,7 @@
 
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#7952B3]"
+                    class="hover:fill-[#7952B3] focus:fill-[#7952B3] active:fill-[#7952B3]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -373,7 +359,7 @@
 
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#06B6D4]"
+                    class="hover:fill-[#06B6D4] focus:fill-[#06B6D4] active:fill-[#06B6D4]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -387,7 +373,7 @@
 
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#777BB4]"
+                    class="hover:fill-[#777BB4] focus:fill-[#777BB4] active:fill-[#777BB4]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -401,7 +387,7 @@
 
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#EF4223]"
+                    class="hover:fill-[#EF4223] focus:fill-[#EF4223] active:fill-[#EF4223]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -415,7 +401,7 @@
 
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#FF2D20]"
+                    class="hover:fill-[#FF2D20] focus:fill-[#FF2D20] active:fill-[#FF2D20]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -429,7 +415,7 @@
 
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#F7DF1E]"
+                    class="hover:fill-[#F7DF1E] focus:fill-[#F7DF1E] active:fill-[#F7DF1E]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -443,7 +429,7 @@
 
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#5A45FF]"
+                    class="hover:fill-[#5A45FF] focus:fill-[#5A45FF] active:fill-[#5A45FF]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -457,7 +443,7 @@
 
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#4479A1]"
+                    class="hover:fill-[#4479A1] focus:fill-[#4479A1] active:fill-[#4479A1]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -471,7 +457,7 @@
 
                 <div class="w-1/6 p-3 md:w-1/4 lg:w-1/6">
                   <svg
-                    class="fill-[#4169E1]"
+                    class="hover:fill-[#4169E1] focus:fill-[#4169E1] active:fill-[#4169E1]"
                     role="img"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
@@ -525,7 +511,7 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Dashboard Panel DRW Skincare
+                  <a href="javascript:void(0)">Dashboard Panel DRW Skincare</a>
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Portal Dashboard untuk mengelola data product, transaksi sales
@@ -543,7 +529,9 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Sistem Akuntansi dan Analisis Bisnis (SAAB)
+                  <a href="javascript:void(0)"
+                    >Sistem Akuntansi dan Analisis Bisnis (SAAB)</a
+                  >
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Sistem aplikasi akuntansi dan analisis yang memudahkan dalam
@@ -588,7 +576,9 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Sistem Rencana Bisnis Anggaran (RBA)
+                  <a href="javascript:void(0)"
+                    >Sistem Rencana Bisnis Anggaran (RBA)</a
+                  >
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Sistem aplikasi yang digunakan untuk memudahkan dalam
@@ -604,7 +594,7 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Sistem Pengajuan
+                  <a href="javascript:void(0)">Sistem Pengajuan</a>
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Sistem aplikasi yang digunakan untuk memudahkan dalam
@@ -649,7 +639,7 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Sistem Penatausahaan
+                  <a href="javascript:void(0)">Sistem Penatausahaan</a>
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Sistem Sistem aplikasi yang digunakan untuk memudahkan dalam
@@ -665,7 +655,7 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Digital Literacy
+                  <a href="javascript:void(0)">Digital Literacy</a>
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Sistem aplikasi yang digunakan untuk wadah bagi para trainer
@@ -710,7 +700,9 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  YSWI (Yayasan Wirausaha Sosial Indonesia)
+                  <a href="javascript:void(0)"
+                    >YSWI (Yayasan Wirausaha Sosial Indonesia)</a
+                  >
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Company profile untuk yayasan wirausaha sosial indonesia.
@@ -725,7 +717,7 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Syncore Consulting
+                  <a href="javascript:void(0)">Syncore Consulting</a>
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Company profile unit consulting milik PT Syncore Indonesia.
@@ -771,7 +763,11 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Online Shop / E-Commerce
+                  <a
+                    href="https://github.com/syahandri/laravel_store"
+                    target="_blank"
+                    >Online Shop / E-Commerce</a
+                  >
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Website toko online / e-commerce menggunakan Framework Laravel
@@ -787,7 +783,11 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Online Shop / E-Commerce
+                  <a
+                    href="https://github.com/syahandri/toko-online-ci4"
+                    target="_blank"
+                    >Online Shop / E-Commerce</a
+                  >
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Website toko online / e-commerce menggunakan Framework
@@ -837,7 +837,11 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Sistem Pakar
+                  <a
+                    href="https://github.com/syahandri/sistem-pakar"
+                    target="_blank"
+                    >Sistem Pakar</a
+                  >
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Aplikasi sistem pakar untuk mendiagnosis penyakit tanaman
@@ -854,7 +858,11 @@
                 <h6
                   class="font-inter mb-1 text-center text-xl text-stone-800 lg:text-start"
                 >
-                  Sistem Pendukung Keputusan
+                  <a
+                    href="https://github.com/syahandri/dss_penilaiankaryawan"
+                    target="_blank"
+                    >Sistem Pendukung Keputusan</a
+                  >
                 </h6>
                 <p class="font-work-sans text-stone-600">
                   Aplikasi sistem pendukung keputusan untuk menilai kinerja
@@ -886,10 +894,7 @@
     <!-- End Projects -->
 
     <!-- Contact -->
-    <section
-      id="contact"
-      class="flex items-center justify-center my-10"
-    >
+    <section id="contact" class="mt-10 flex items-center justify-center">
       <div class="container">
         <div class="bg-white p-8 md:rounded-2xl">
           <div class="mb-3 flex justify-center">
@@ -908,14 +913,14 @@
               <form action="" id="formContact">
                 <div class="mb-3">
                   <label
-                    class="after:ml-0.5 after:text-red-500 after:content-['*']"
+                    class="font-google-sans-code text-stone-700 after:ml-0.5 after:text-red-500 after:content-['*']"
                     for="name"
                     >Nama Lengkap</label
                   >
                   <input
                     id="name"
                     type="text"
-                    class="w-full rounded-lg border-2 border-stone-700 p-2 text-stone-800 user-invalid:border-red-500 user-invalid:text-red-600 focus:border-stone-700 focus:outline focus:outline-stone-700 focus:user-invalid:border-red-500 focus:user-invalid:outline-red-500"
+                    class="font-google-sans-code w-full rounded-lg border-2 border-stone-700 p-2 text-stone-700 user-invalid:border-red-500 user-invalid:text-red-600 focus:border-stone-700 focus:outline focus:outline-stone-700 focus:user-invalid:border-red-500 focus:user-invalid:outline-red-500"
                     placeholder="Masukan nama anda..."
                     required
                   />
@@ -923,14 +928,14 @@
 
                 <div class="mb-3">
                   <label
-                    class="after:ml-0.5 after:text-red-500 after:content-['*']"
+                    class="font-google-sans-code text-stone-700 after:ml-0.5 after:text-red-500 after:content-['*']"
                     for="instance"
                     >Instansi</label
                   >
                   <input
                     id="instance"
                     type="text"
-                    class="w-full rounded-lg border-2 border-stone-700 p-2 text-stone-800 user-invalid:border-red-500 user-invalid:text-red-600 focus:border-stone-700 focus:outline focus:outline-stone-700 focus:user-invalid:border-red-500 focus:user-invalid:outline-red-500"
+                    class="font-google-sans-code w-full rounded-lg border-2 border-stone-700 p-2 text-stone-700 user-invalid:border-red-500 user-invalid:text-red-600 focus:border-stone-700 focus:outline focus:outline-stone-700 focus:user-invalid:border-red-500 focus:user-invalid:outline-red-500"
                     placeholder="Masukan instansi anda..."
                     required
                   />
@@ -938,13 +943,13 @@
 
                 <div class="mb-3">
                   <label
-                    class="after:ml-0.5 after:text-red-500 after:content-['*']"
+                    class="font-google-sans-code text-stone-700 after:ml-0.5 after:text-red-500 after:content-['*']"
                     for="message"
                     >Pesan</label
                   >
                   <textarea
                     id="message"
-                    class="w-full rounded-lg border-2 border-stone-700 p-2 text-stone-800 user-invalid:border-red-500 user-invalid:text-red-600 focus:border-stone-700 focus:outline focus:outline-stone-700 focus:user-invalid:border-red-500 focus:user-invalid:outline-red-500"
+                    class="font-google-sans-code w-full rounded-lg border-2 border-stone-700 p-2 text-stone-700 user-invalid:border-red-500 user-invalid:text-red-600 focus:border-stone-700 focus:outline focus:outline-stone-700 focus:user-invalid:border-red-500 focus:user-invalid:outline-red-500"
                     rows="5"
                     placeholder="Masukan pesan anda..."
                     required
@@ -980,6 +985,154 @@
       </div>
     </section>
     <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer class="mt-10 flex items-center justify-center md:my-10">
+      <div class="container">
+        <div class="bg-white p-4 md:rounded-2xl">
+          <div class="flex items-center justify-between">
+            <div class="w-1/2">
+              <span class="font-google-sans-code text-stone-700"
+                >Made by me with ♥️</span
+              >
+            </div>
+            <div class="w-1/2">
+              <div class="flex items-center justify-end gap-1">
+                <div class="group">
+                  <a
+                    href="https://github.com/syahandri"
+                    target="_blank"
+                    class="flex justify-center rounded p-2 text-stone-700 transition-all duration-500 ease-in-out group-hover:bg-[#181717] group-hover:text-stone-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      >
+                        <path
+                          d="M9.096 21.25v-3.146a3.33 3.33 0 0 1 .758-2.115c-3.005-.4-5.28-1.859-5.28-5.798c0-1.666 1.432-3.89 1.432-3.89c-.514-1.13-.5-3.084.06-3.551c0 0 1.95.175 3.847 1.75c1.838-.495 3.764-.554 5.661 0c1.897-1.575 3.848-1.75 3.848-1.75c.558.467.573 2.422.06 3.551c0 0 1.432 2.224 1.432 3.89c0 3.94-2.276 5.398-5.28 5.798a3.33 3.33 0 0 1 .757 2.115v3.146"
+                        />
+                        <path
+                          d="M3.086 16.57c.163.554.463 1.066.878 1.496c.414.431.932.77 1.513.988a4.46 4.46 0 0 0 3.62-.216"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div class="group">
+                  <a
+                    href="https://gitlab.com/syahandri"
+                    target="_blank"
+                    class="flex justify-center rounded p-2 text-stone-700 transition-all duration-500 ease-in-out group-hover:bg-[#FC6D26] group-hover:text-stone-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M5.544 2.673a1.55 1.55 0 0 1 1.8.097v.001c.246.198.426.466.515.769l1.446 4.428h5.39L16.14 3.54a1.54 1.54 0 0 1 .515-.769l.004-.004a1.55 1.55 0 0 1 1.795-.095l.002.001c.274.174.486.43.605.732l.004.01l2.473 6.451a5.45 5.45 0 0 1-1.813 6.303l-6.73 5.064h-.002a1.66 1.66 0 0 1-2 0l-6.731-5.065a5.45 5.45 0 0 1-1.806-6.294l2.48-6.469c.12-.302.333-.558.607-.732m.811 2.063L4.16 10.464c-.28.737-.337 1.604-.12 2.362c.217.755.671 1.42 1.295 1.896l6.66 5.01l6.653-5.005a3.65 3.65 0 0 0 1.308-1.904c.22-.76.159-1.638-.123-2.378l-2.189-5.71L16 9.769H8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="group">
+                  <a
+                    href="https://www.linkedin.com/in/ahmadandriansyah"
+                    target="_blank"
+                    class="flex justify-center rounded p-2 text-stone-700 transition-all duration-500 ease-in-out group-hover:bg-[#0077B5] group-hover:text-stone-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"
+                        />
+                        <circle cx="4" cy="4" r="2" />
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div class="group">
+                  <a
+                    href="https://wa.me/6287869984752"
+                    target="_blank"
+                    class="flex justify-center rounded p-2 text-stone-700 transition-all duration-500 ease-in-out group-hover:bg-[#25D366] group-hover:text-stone-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                    >
+                      <g fill="none">
+                        <path
+                          d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                        />
+                        <path
+                          fill="currentColor"
+                          d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-4.863-1.26l-.305-.178l-3.032.892a1.01 1.01 0 0 1-1.28-1.145l.026-.109l.892-3.032A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2m0 2a8 8 0 0 0-6.759 12.282c.198.312.283.696.216 1.077l-.039.163l-.441 1.501l1.501-.441c.433-.128.883-.05 1.24.177A8 8 0 1 0 12 4M9.102 7.184a.7.7 0 0 1 .684.075c.504.368.904.862 1.248 1.344l.327.474l.153.225a.71.71 0 0 1-.046.864l-.075.076l-.924.686a.23.23 0 0 0-.067.291c.21.38.581.947 1.007 1.373c.427.426 1.02.822 1.426 1.055c.088.05.194.034.266-.031l.038-.045l.601-.915a.71.71 0 0 1 .973-.158l.543.379c.54.385 1.059.799 1.47 1.324a.7.7 0 0 1 .089.703c-.396.924-1.399 1.711-2.441 1.673l-.159-.01l-.191-.018l-.108-.014l-.238-.04c-.924-.174-2.405-.698-3.94-2.232c-1.534-1.535-2.058-3.016-2.232-3.94l-.04-.238l-.025-.208l-.013-.175l-.004-.075c-.038-1.044.753-2.047 1.678-2.443"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <div class="group">
+                  <a
+                    href="mailto:syah.ahmadandrian@gmail.com"
+                    target="_blank"
+                    class="flex justify-center rounded p-2 text-stone-700 transition-all duration-500 ease-in-out group-hover:bg-[#EA4335] group-hover:text-stone-100"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 24 24"
+                    >
+                      <g fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect
+                          width="18.5"
+                          height="17"
+                          x="2.682"
+                          y="3.5"
+                          rx="4"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m2.729 7.59l7.205 4.13a3.96 3.96 0 0 0 3.975 0l7.225-4.13"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <script src="./assets/js/script.js"></script>
   </body>
